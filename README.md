@@ -9,7 +9,6 @@ A work in progress implementation of the **Nintendo Entertainment System (NES)**
 I've been writing this emulator not only to learn more about computer architecture, but also to understand the inner-workings of one of my favorite childhood game consoles. What inspired me to move forward with this project is [this video](https://youtu.be/y71lli8MS8s), posted by [bisqwit](https://github.com/bisqwit).
 
 ## Disclaimer
----
 
 While emulation is legal, *the act of downloading ROMs not explicitly licensed for free distribution by the respective copyright holders constitutes as piracy, and is therefore illegal.* 
 
@@ -18,14 +17,12 @@ If you plan to emulate a copyrighted game, you will need to dump the ROM from a 
 Alternatively, there are a variety of free, legal ROMs openly available for download. Albeit not games, you can find a selection of ROMs [here](https://www.nesdev.org/wiki/Emulator_tests) that allow you to test your NES emulator. There are plenty of options available, and I recommend scowering the web to discover more.
 
 ## A brief history
----
 
 For those unfamiliar, the [Nintendo Entertainment System (NES)](https://en.wikipedia.org/wiki/Nintendo_Entertainment_System) was a landmark console in the history of video games. It introduced us to household franchises such as [Super Mario Brothers](https://en.wikipedia.org/wiki/Super_Mario_Bros.), [The Legend of Zelda](https://en.wikipedia.org/wiki/The_Legend_of_Zelda), [Metroid](https://en.wikipedia.org/wiki/Metroid), and [countless others](https://youtu.be/um-GMygsRg4).
 
 Initially launched in Japan in 1983 as the Family Computer (colloquially known as the Famicom), the platform found immediate success amongst Japanese consumers, selling 500,000 units within the first two months of its debut. The NTSC/PAL iteration of the Famicom, the NES, wouldn't arrive until 1985 as the west was skeptical of video games following the [video game crash of 1983](https://en.wikipedia.org/wiki/Video_game_crash_of_1983). Their concerns were quickly alleviated by Nintendo's clever engineering and strict quality guidelines for games.
 
 ## Inside the NES (WIP)
----
 
 Discounting the Famicom's inclusion of additional sound channels and oscillators, the hardware inside the Famicom and NES remains largely the same.
 
@@ -36,7 +33,6 @@ For graphics, Nintendo would also employ Ricoh to create a chipset designed excl
 There are *many* hardware details I can't cover in this section for brevity's sake. To learn more, I recommend reading [this document](https://www.nesdev.com/NESDoc.pdf) (hosted by NESDev) as it's immensely detailed.
 
 ## What's completed?
----
 
 - **CPU** - Implemented all official 6502 opcodes and tested them with [nestest](https://github.com/christopherpow/nes-test-roms/blob/master/other/nestest.txt).
 - **PPU*** - *Very* rough implementation. It currently produce some graphics, but will need an overhaul to proceed.
@@ -45,7 +41,6 @@ There are *many* hardware details I can't cover in this section for brevity's sa
 - **GUI** - Currently outputs display buffer using SDL. The user can adjust scaling using a hardcoded variable found in the GUI header file.
 
 ## What's next?
----
 
 - **CPU** - Implement unofficial opcodes to support a variety of non-licensed games.
 - **PPU** - Reimplement the PPU to be both compatible and cycle-accurate.
@@ -55,7 +50,6 @@ There are *many* hardware details I can't cover in this section for brevity's sa
 - **Documentation** - Document what I've learned from building this emulator for others to reference.
 
 ## Screenshots
----
 
 <p style="margin-bottom: 0px;" align="center">
 	<img src="assets/images/donkey_kong.png" alt="Donkey Kong (1986)" />
@@ -63,7 +57,6 @@ There are *many* hardware details I can't cover in this section for brevity's sa
 </p>
 
 ## How to Build
----
 
 Requirements:
 
@@ -82,7 +75,6 @@ $ make
 ```
 
 ## Usage
----
 
 Please note the limitations mentioned above.
 
@@ -91,7 +83,6 @@ $ ./bnes /path/to/ROM.nes
 ```
 
 ## References
----
 
 - [Technical Specifications](https://en.wikipedia.org/wiki/Nintendo_Entertainment_System#Technical_specifications)
 - [NESdev Wiki](https://www.nesdev.org/wiki/Nesdev_Wiki)
@@ -99,6 +90,5 @@ $ ./bnes /path/to/ROM.nes
 - [Writing NES Emulator in Rust](https://bugzmanov.github.io/nes_ebook/index.html)
 
 ## Credits
----
 
 - [Libruh](https://github.com/Libruh) for designing the bnes logo!
